@@ -1,0 +1,14 @@
+clc;
+clear all;
+close all;
+set(0,'defaultlinelinewidth',1.5);
+x=[4 16 64];
+c=[54.62 54.97 73.49];
+l=[56.17 56.52 76.03];
+w=[55.55 55.89 79.35];
+figure;
+plot(x,c,'r-o',x,l,'g-o',x,w,'-o');
+legend('cameraman','lena','wbarb');
+title('DCT graphs');
+xlabel('no.of.coeff----->');
+ylabel('PSNR---->');

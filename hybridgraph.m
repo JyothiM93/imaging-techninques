@@ -1,0 +1,14 @@
+clc;
+clear all;
+close all;
+set(0,'defaultlinelinewidth',1.5);
+x=[4 16 64];
+c=[54.90 55.18 77.35];
+l=[56.45 56.73 78.59];
+w=[55.79 56.09 82.52];
+figure;
+plot(x,c,'r-o',x,l,'g-o',x,w,'-o');
+legend('cameraman','lena','wbarb');
+title('Hybrid technique graphs');
+xlabel('no.of.coeff----->');
+ylabel('PSNR---->');
